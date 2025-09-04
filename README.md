@@ -30,10 +30,10 @@ Users should be able to:
 
 ![](./screenshot.jpg)
 
-### Links
+### Links ttps://github.com/kachi33/space-tourism
 
-- Solution URL: [View now...]()
-- Live Site URL: [View now...]()
+- Solution URL: [View now...](https://github.com/kachi33/space-tourism)
+- Live Site URL: [View now...](https://space-tourism-nine-lyart.vercel.app/)
 
 ## My process
 
