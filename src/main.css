@@ -1,1 +1,34 @@
 @import "tailwindcss";
+
+@font-face {
+    font-family: 'Barlow Condensed';
+    src: url('/Barlow_Condensed/BarlowCondensed-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bellefair';
+    src: url('/Bellefair/Bellefair-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Barlow';
+    src: url('/Barlow/Barlow-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@theme inline{
+    --font-primary-family: 'Barlow Condensed', sans-serif;
+    --font-seconday-family: 'Bellefair', serif;      
+    --font-accent-family: 'Barlow', sans-serif;
+    --color-light-blue:  rgb(from theme('colors.blue.300') r g b);
+    --color-dark-blue:  rgb(from theme('colors.blue.900') r g b);
+}
+
+* {
+    font-family: var(--font-primary-family);
+}
