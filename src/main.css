@@ -23,12 +23,12 @@
 
 @theme inline{
     --font-primary-family: 'Barlow Condensed', sans-serif;
-    --font-seconday-family: 'Bellefair', serif;      
+    --font-secondary-family: 'Bellefair', serif;      
     --font-accent-family: 'Barlow', sans-serif;
-    --color-light-blue:  rgb(from theme('colors.blue.300') r g b);
+    --color-light-blue:  #D0D6F9;
     --color-dark-blue:  rgb(from theme('colors.blue.900') r g b);
 }
 
-* {
+body {
     font-family: var(--font-primary-family);
 }
