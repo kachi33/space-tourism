@@ -2,18 +2,18 @@
   <main
     class="pt-20 md:pt-28 text-light-blue h-screen bg-[url('/destination/background-destination-mobile.jpg')] lg:bg-[url('/destination/background-destination-desktop.jpg')] md:bg-[url('/destination/background-destination-tablet.jpg')] bg-cover bg-no-repeat bg-center overflow-scroll"
   >
-    <div class="container w-[80%] mx-auto px-4 py-8">
-      <div class="flex flex-col  justify-center text-light-blue md:gap-12">
-        <h1 class="text-xl md:text-2xl mb-8 text-center lg:text-left tracking-[4px] flex gap-2 uppercase">
+    <div class="container md:w-[80%] lg:h-full mx-auto px-4 py-8">
+      <div class="flex flex-col lg:h-full justify-center text-light-blue md:gap-12">
+        <h1 class="text-xl md:text-2xl mb-8 text-center lg:text-left tracking-[4px] flex justify-center md:justify-start gap-2 uppercase">
             <span class="text-gray-400">01</span>Pick your destination
         </h1>
 
-        <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-24">
+        <div class="flex flex-col lg:flex-row justify-center items-center lg:h-full gap-12 lg:gap-24">
           <div class="lg:w-1/2 flex justify-center">
             <img 
             :src="currentDestination.images?.png" 
             :alt="currentDestination.name"
-            class="w-46 h-46 md:w-80 md:h-80 object-contain"
+            class="w-46 h-46 md:w-80 md:h-80 lg:w-96 lg:h-96 object-contain"
             />
           </div>
           
@@ -26,8 +26,8 @@
                 class="cursor-pointer pb-2 border-b-2 transition-colors"
                 :class="[
                   currentDestination.name === destination.name 
-                  ? 'border-white' 
-                  : 'border-transparent hover:border-gray-400'
+                  ? 'border-white text-white' 
+                  : 'border-transparent hover:border-white'
                 ]"
               @click="selectDestination(destination)"
               >
@@ -41,7 +41,7 @@
             {{ currentDestination.name?.toUpperCase() }}
           </h2>
           
-          <p class="text-lg font-accent-family mb-8 text-light-blue leading-relaxed max-w-md mx-auto lg:mx-0">
+          <p class="text-lg font-accent-family mb-8 text-light-blue leading-relaxed mx-auto lg:mx-0">
             {{ currentDestination.description }}
           </p>
           
