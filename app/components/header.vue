@@ -65,9 +65,9 @@ const isMenuOpen = ref(false);
 
 const navItems = [
   { path: '/',  name: 'HOME' },
-  { path: '/destination', number: '01', name: 'DESTINATION' },
-  { path: '/crew', number: '02', name: 'CREW' },
-  { path: '/technology', number: '03', name: 'TECHNOLOGY' }
+  { path: '/destination/', number: '01', name: 'DESTINATION' },
+  { path: '/crew/', number: '02', name: 'CREW' },
+  { path: '/technology/', number: '03', name: 'TECHNOLOGY' }
 ];
 
 

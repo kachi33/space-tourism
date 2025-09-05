@@ -47,10 +47,18 @@ Users should be able to:
 **Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
+ Reactive state management with ref() and computed()
+  - Component lifecycle - using onMounted() for client-side operations
+  - Template conditionals - v-if, v-for, dynamic classes with :class
+  - Event handling - @click for user interactions
 
-
+#### Key Takeaway
+  Sometimes the simplest solution is the best solution - I went from trying to implement a complex state management with external data fetching to chossing clean, static data that just works. I learned when to add complexity and when it's not neccessary.
 
 ### Continued development
+  I'd like to improve on Debugging tactics on Nuxt App with focus on 
+   - SSR/Hydration issues and cache invalidation
+  - Import/auto-import troubles with composables and stores
 
 
 ### Useful resources
