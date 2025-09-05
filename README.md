@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./screenshot.png)
 
 ### Links ttps://github.com/kachi33/space-tourism
 
@@ -63,10 +63,10 @@ Users should be able to:
 
 ### Useful resources
 
-- [Your Navbar Should Know where it is]() - This helped me with making UI design decisions . I really liked this pattern and will use it going forward.
+- [Your Navbar Should Know where it is](https://dev.to/kachi33/your-navbar-should-know-where-it-is-1446) - This helped me with making UI design decisions . I really liked this pattern and will use it going forward.
 
 ## Author
 
-- Frontend Mentor - @kachi33
-- LinkedIn - kachi Ezeah
+- Frontend Mentor - [@kachi33](https://www.frontendmentor.io/profile/kachi33)
+- LinkedIn - [kachi Ezeah](https://www.linkedin.com/in/kachi33-ezeah/)
 
