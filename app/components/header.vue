@@ -28,16 +28,18 @@
           @click="isMenuOpen = false"
         />
         <ul class="flex flex-col gap-8 text-white pl-6 text-lg ">
-          <NuxtLink 
+          <li 
             v-for="item in navItemsMobile" 
             :key="item.path" 
-            :to="item.path" 
-            class="cursor-pointer"
+            :class="['hover:border-r-4 flex-2 border-white pointer-events-none', { 'border-r-4': $route.path === item.path }]"
           >
-            <li :class="['hover:border-r-4 flex-2 border-white', { 'border-r-4': $route.path === item.path }]">
+            <NuxtLink 
+              :to="item.path" 
+              class="cursor-pointer pointer-events-auto block w-full h-full"
+            >
               <span class="font-extrabold">{{ item.number }}</span>  {{ item.name }}
-            </li>
-          </NuxtLink>
+            </NuxtLink>
+          </li>
         </ul>
       </div>
     </div>
@@ -45,15 +47,18 @@
         <ul
             class="hidden h-full md:flex md:gap-10 lg:gap-10 xl:gap-16 2xl:gap-20 text-lg "
         >
-            <NuxtLink 
+            <li 
               v-for="item in navItems" 
               :key="item.path" 
-              :to="item.path"
+              :class="['hover:border-b-2 h-full text-white  py-8 lg:py-6  border-white', { 'border-b-2': $route.path === item.path }]"
             >
-              <li :class="['hover:border-b-2 h-full text-white  py-8 lg:py-6 flex gap-4 border-white', { 'border-b-2': $route.path === item.path }]">
+              <NuxtLink 
+                :to="item.path"
+                class="flex gap-4 pointer-events-auto w-full h-full items-center cursor-pointer"
+              >
                <span class="font-bold">{{ item.number }} </span>{{ item.name }}
-              </li>
-            </NuxtLink>
+              </NuxtLink>
+            </li>
         </ul>
     </div>
   </nav>

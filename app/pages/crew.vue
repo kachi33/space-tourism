@@ -70,6 +70,10 @@
 
 
 <script setup>
+useHead({
+  title: 'Space Tourism | Crew'
+})
+
 const crew = [
   {
     name: "Douglas Hurley",

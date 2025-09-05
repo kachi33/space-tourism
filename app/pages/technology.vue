@@ -76,6 +76,10 @@
 </template>
 
 <script setup>
+useHead({
+  title: 'Space Tourism | Technology'
+})
+
 const technology = [
   {
     name: "Launch vehicle",

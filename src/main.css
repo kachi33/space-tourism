@@ -29,6 +29,28 @@
     --color-dark-blue:  rgb(from theme('colors.blue.900') r g b);
 }
 
+html {
+    background-color: #0B1426;
+}
+
 body {
     font-family: var(--font-primary-family);
+    background-color: #0B1426;
+    margin: 0;
+    padding: 0;
+}
+
+.page-enter-active,
+.page-leave-active {
+    transition: all 0.3s ease;
+}
+
+.page-enter-from {
+    opacity: 0;
+    transform: translateY(10px);
+}
+
+.page-leave-to {
+    opacity: 0;
+    transform: translateY(-10px);
 }

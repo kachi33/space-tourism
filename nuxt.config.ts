@@ -4,11 +4,13 @@ import tailwindcss from "@tailwindcss/vite";
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
-    vite: {
+  vite: {
     plugins: [
       tailwindcss(),
     ],
   },
-    css: ['./src/main.css']
-
+  css: ['./src/main.css'],
+  app: {
+    pageTransition: { name: 'page', mode: 'out-in' }
+  }
 })

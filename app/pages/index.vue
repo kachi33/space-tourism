@@ -23,3 +23,9 @@
     </div>
   </main>
 </template>
+
+<script setup>
+useHead({
+  title: 'Space Tourism | Home'
+})
+</script>

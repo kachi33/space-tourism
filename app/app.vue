@@ -2,6 +2,11 @@
   <NuxtLayout>
     <NuxtPage />
   </NuxtLayout>
-  <NuxtRouteAnnouncer />
 </template>
-<script setup></script>
+<script setup>
+useHead({
+  htmlAttrs: {
+    lang: 'en'
+  }
+})
+</script>

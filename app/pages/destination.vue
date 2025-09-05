@@ -66,6 +66,10 @@
 </template>
 
 <script setup>
+useHead({
+  title: 'Space Tourism | Destination'
+})
+
 const destinations = [
   {
     name: "Moon",
