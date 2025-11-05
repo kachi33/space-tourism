@@ -1,72 +1,122 @@
-# Frontend Mentor - Space tourism website solution
+# Space Tourism
 
-This is a solution to the [Space tourism website challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+> A modern, interactive space tourism website built with Nuxt 4 and Tailwind CSS 4
 
-## Table of contents
+[![Live Demo](https://img.shields.io/badge/demo-live-brightgreen)](https://space-tourism-nine-lyart.vercel.app/)
+[![GitHub](https://img.shields.io/badge/github-repo-blue)](https://github.com/kachi33/space-tourism)
 
-- [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
-- [Author](#author)
-
+![Space Tourism Preview](./preview.jpg)
 
 ## Overview
 
-### The challenge
+Space Tourism is a multi-page web application that takes users on an immersive journey through space exploration. Explore potential destinations, meet crew members, and discover the cutting-edge technology that makes space travel possible.
 
-Users should be able to:
+## Features
 
-- View the optimal layout for each of the website's pages depending on their device's screen size
-- See hover states for all interactive elements on the page
-- View each page and be able to toggle between the tabs to see new information
+- **Interactive Destination Browser** - Explore detailed information about Moon, Mars, Europa, and Titan with dynamic content switching
+- **Crew Profiles** - Meet the team of space pioneers including Douglas Hurley, Mark Shuttleworth, Anousheh Ansari, and Victor Glover
+- **Technology Showcase** - Discover the launch vehicles, spaceports, and space capsules that power space tourism
+- **Smooth Page Transitions** - Seamless navigation experience with animated page transitions
+- **Fully Responsive Design** - Optimized layouts for mobile, tablet, and desktop devices
+- **Custom Typography** - Beautiful typography using Bellefair and Barlow font families
+- **Dynamic Backgrounds** - Page-specific immersive background imagery
 
-### Screenshot
+## Tech Stack
 
-![](./screenshot.png)
+- **[Nuxt 4](https://nuxt.com/)** - The Vue framework for modern web applications
+- **[Vue 3](https://vuejs.org/)** - Progressive JavaScript framework with Composition API
+- **[Tailwind CSS 4](https://tailwindcss.com/)** - Utility-first CSS framework
+- **Server-Side Rendering (SSR)** - Built-in SSR for optimal performance and SEO
+- **Vite** - Next-generation frontend tooling
 
-### Links ttps://github.com/kachi33/space-tourism
+## Getting Started
 
-- Solution URL: [View now...](https://github.com/kachi33/space-tourism)
-- Live Site URL: [View now...](https://space-tourism-nine-lyart.vercel.app/)
+### Prerequisites
 
-## My process
+- Node.js 18+
+- npm or yarn
 
-### Built with
+### Installation
 
-- Semantic HTML5 markup
-- Mobile-first workflow
-- [Nuxt.js](https://nuxt.com/) - Vue3 library
-- [Tailwind Style Components](https://tailwind.com/) - For styles
+1. Clone the repository
+```bash
+git clone https://github.com/kachi33/space-tourism.git
+cd space-tourism
+```
 
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
+2. Install dependencies
+```bash
+npm install
+```
 
-### What I learned
- Reactive state management with ref() and computed()
-  - Component lifecycle - using onMounted() for client-side operations
-  - Template conditionals - v-if, v-for, dynamic classes with :class
-  - Event handling - @click for user interactions
+3. Start the development server
+```bash
+npm run dev
+```
 
-#### Key Takeaway
-  Sometimes the simplest solution is the best solution - I went from trying to implement a complex state management with external data fetching to chossing clean, static data that just works. I learned when to add complexity and when it's not neccessary.
+The application will be available at `http://localhost:3000`
 
-### Continued development
-  I'd like to improve on Debugging tactics on Nuxt App with focus on 
-   - SSR/Hydration issues and cache invalidation
-  - Import/auto-import troubles with composables and stores
+### Build for Production
 
+```bash
+# Build the application
+npm run build
 
-### Useful resources
+# Preview the production build
+npm run preview
 
-- [Your Navbar Should Know where it is](https://dev.to/kachi33/your-navbar-should-know-where-it-is-1446) - This helped me with making UI design decisions . I really liked this pattern and will use it going forward.
+# Generate static site
+npm run generate
+```
+
+## Project Structure
+
+```
+space-tourism/
+├── app/
+│   ├── pages/           # Application pages (Home, Destination, Crew, Technology)
+│   ├── components/      # Reusable Vue components
+│   ├── layouts/         # Layout templates
+│   └── app.vue          # Root application component
+├── public/              # Static assets (fonts, images, backgrounds)
+├── src/                 # Styles and configuration
+└── nuxt.config.ts       # Nuxt configuration
+```
+
+## Design Highlights
+
+### Responsive Breakpoints
+- **Mobile**: Optimized for small screens
+- **Tablet (md)**: Enhanced layouts for medium devices
+- **Desktop (lg)**: Full immersive experience for large screens
+
+### Typography
+- **Bellefair** - Display font for headings and large text
+- **Barlow** - Primary body text
+- **Barlow Condensed** - Navigation and UI elements
+
+### Color Scheme
+- Deep space backgrounds
+- Light blue accents for text (`#D0D6F9`)
+- White highlights for emphasis
+- Subtle gray borders and dividers
+
+## Key Learnings
+
+- **Reactive State Management** - Implementing dynamic content switching with Vue's `ref()` and `computed()`
+- **Component Lifecycle** - Using `onMounted()` for client-side operations and proper SSR handling
+- **Template Conditionals** - Leveraging `v-if`, `v-for`, and dynamic classes with `:class`
+- **Mobile-First Development** - Building responsive layouts from mobile up to desktop
+- **Performance Optimization** - Balancing aesthetics with performance through optimized assets and lazy loading
 
 ## Author
 
-- Frontend Mentor - [@kachi33](https://www.frontendmentor.io/profile/kachi33)
-- LinkedIn - [kachi Ezeah](https://www.linkedin.com/in/kachi33-ezeah/)
+**Kachi Ezeah**
 
+- Frontend Mentor: [@kachi33](https://www.frontendmentor.io/profile/kachi33)
+- LinkedIn: [Kachi Ezeah](https://www.linkedin.com/in/kachi33-ezeah/)
+- GitHub: [@kachi33](https://github.com/kachi33)
+
+## Acknowledgments
+
+This project is a solution to the [Space Tourism Website Challenge](https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3) by Frontend Mentor.
